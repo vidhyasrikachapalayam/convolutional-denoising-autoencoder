@@ -43,7 +43,8 @@ Plot the predictions for visualization
 Developed by: VIDHYASRI.K
 Register no: 212222230170
 
- Import necessary libraries
+Import necessary libraries
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -51,6 +52,7 @@ import matplotlib.pyplot as plt
 from tensorflow import keras
 from tensorflow.keras import layers, utils, models
 from tensorflow.keras.datasets import mnist
+
 Read the dataset and scale it
 (x_train, _), (x_test, _) = mnist.load_data()
 
@@ -156,16 +158,11 @@ plt.show()
 ## OUTPUT
 ## Training Loss, Validation Loss Vs Iteration Plot:
 
-
-
-### Training Loss, Validation Loss Vs Iteration Plot
-
-Include your plot here
+![image](https://github.com/vidhyasrikachapalayam/convolutional-denoising-autoencoder/assets/119477817/0ccbe9d9-2cc9-42ea-9753-c5033fb5981b)
 
 ### Original vs Noisy Vs Reconstructed Image
 
-Include a few sample images here.
-
-
+![image](https://github.com/vidhyasrikachapalayam/convolutional-denoising-autoencoder/assets/119477817/cb398c11-4b55-45e2-b7fc-c9d3eefe8dd8)
 
 ## RESULT
+Thus we have successfully developed a convolutional autoencoder for image denoising application.
