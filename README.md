@@ -91,6 +91,7 @@ for i in range(1, n + 1):
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
 plt.show()
+
 Develop an Autoencoder DL Model
 input_img = keras.Input(shape=(28, 28, 1))
 
@@ -118,6 +119,7 @@ decoded = layers.Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
 autoencoder = keras.Model(input_img, decoded)
 
 autoencoder.summary()
+
 Compile and Fit the model
 autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
 
